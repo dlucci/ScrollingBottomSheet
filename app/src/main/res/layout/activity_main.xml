@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <include layout="@layout/custom_bottom_sheet" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/bad_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/button"
@@ -19,7 +19,5 @@
 
             android:text="Open Bottom Sheet"
             android:onClick="openBottom"/>
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
